@@ -85,11 +85,11 @@ q. quit
     
         of 4:
             res = mul(one, two)
+
+        else:
+            echo "invalid choice"
     
-    stdout.write("result: ")
-    # stdout.flush()
-    echo res
-    echo ""
+    echo "result: ", res
     
 echo "program quit"
         
