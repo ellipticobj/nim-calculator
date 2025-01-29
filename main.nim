@@ -34,7 +34,6 @@ q. quit
     choice = readLine(stdin)
 
     if toLower(choice) == "q" or toLower(choice) == "quit":
-        echo "quitting"
         break
     
     try:
