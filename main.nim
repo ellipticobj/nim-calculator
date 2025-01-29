@@ -5,7 +5,10 @@ proc add(a: float, b: float): float = a + b
 
 proc sub(a: float, b: float): float = a - b
 
-proc divi(a: float, b: float): float = a / b
+proc divi(a: float, b: float): float =
+    if b == 0.0:
+        raise newException(ValueError, "cannot divide by zero")
+    result = a / b
 
 proc mul(a: float, b: float): float = a * b
 
