@@ -75,7 +75,12 @@ q. quit
         res = sub(one, two)
     
     elif parseInt(choice) == 3:
-        res = divi(one, two)
+        try:
+            res = divi(one, two)
+        except:
+            echo "result: undefined"
+            echo ""
+            continue
     
     elif parseInt(choice) == 4:
         res = mul(one, two)
