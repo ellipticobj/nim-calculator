@@ -68,22 +68,23 @@ q. quit
 
     choiceint = parseInt(choice)
 
-    if parseInt(choice) == 1:
-        res = add(one, two)
+    case parseInt(choice):
+        of 1:
+            res = add(one, two)
 
-    elif parseInt(choice) == 2:
-        res = sub(one, two)
+        of 2:
+            res = sub(one, two)
     
-    elif parseInt(choice) == 3:
-        try:
-            res = divi(one, two)
-        except:
-            echo "result: undefined"
-            echo ""
-            continue
+        of 3:
+            try:
+                res = divi(one, two)
+            except:
+                echo "result: undefined"
+                echo ""
+                continue
     
-    elif parseInt(choice) == 4:
-        res = mul(one, two)
+        of 4:
+            res = mul(one, two)
     
     stdout.write("result: ")
     # stdout.flush()
